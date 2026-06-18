@@ -1,9 +1,9 @@
 package com.example.glowsync.supabase
 
-import com.example.glowsync.BuildConfig
-
 object SupabaseClient {
-    val url: String = BuildConfig.SUPABASE_URL.trimEnd('/')
-    val anonKey: String = BuildConfig.SUPABASE_ANON_KEY
-    val isConfigured: Boolean get() = url.isNotBlank() && anonKey.isNotBlank()
+    val url: String = "https://xgkmopckaclobxyywiXd.supabase.co"
+    val anonKey: String = "sb_publishable_ZgzFevkPrZVbv_1YtZUcbg_7BL_CB2g"
+
+    val isConfigured: Boolean
+        get() = url.isNotBlank() && anonKey.isNotBlank()
 }
